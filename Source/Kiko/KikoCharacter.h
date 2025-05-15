@@ -47,7 +47,8 @@ class AKikoCharacter : public ACharacter
 public:
 	AKikoCharacter();
 	
-
+UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Camera)
+bool bIsJumping=false;
 protected:
 
 	/** Called for movement input */
@@ -55,7 +56,7 @@ protected:
 
 	/** Called for looking input */
 	void Look(const FInputActionValue& Value);
-			
+
 
 protected:
 
